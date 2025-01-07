@@ -1,7 +1,7 @@
 ## Project Title: Automating an Audit-Driven Identity and Access Management Framework in Active Directory with Enhanced Security and Compliance
 
 ## Disclaimer Notice:
-The use of the name "SidodatTech" in this project is for illustrative and educational purposes only. SidodatTech is a fictional company created for this project. Any resemblance to real companies or organizations and individuals, living or dead, is purely coincidental. The information provided is intended for educational and research purposes. SidodatTech and other names used in this project do not endorse, sponsor, or approve of any of the content, methodologies, or recommendations presented herein. All opinions, conclusions, and recommendations expressed in this project are solely those of the author and do not represent the views or positions of any actual company or organization.
+The use of the name "SidodatTech" in this project is for illustrative and educational purposes only. SidodatTech is a fictional company created for this project. Any resemblance to real companies or organizations and individuals, living or dead, is purely coincidental. The information provided is intended for educational and research purposes. SidodatTech and other names used in this project do not endorse, sponsor, or approve any of the content, methodologies, or recommendations presented herein. All opinions, conclusions, and recommendations expressed in this project are solely those of the author and do not represent the views or positions of any actual company or organization.
 By viewing or utilizing this project, the reader acknowledges and agrees to these terms and conditions.
 
 ## Scenario Background:
@@ -10,8 +10,11 @@ SidodatTech Enterprise Limited, a mid-sized financial services company, experien
 •	Lack of accountability for privileged user activities.
 
 •	Orphaned accounts belonging to former employees are still active in the system.
+
 •	Inconsistent role-based access control (RBAC) policies, leading to excessive permissions for users.
+
 •	Absence of audit trails for changes made to user accounts and security groups.
+
 To address these challenges, SidodatTech aimed to design and implement an Identity and Access Management (IAM) framework that emphasizes auditing in Active Directory to ensure compliance, enhance security posture, and prevent unauthorized access.
 
 This project aims to implement a systematic process for reviewing and monitoring user accounts in Active Directory (AD) to ensure proper Identity and Access Management (IAM). The focus will be on maintaining the principle of least privilege, identifying inactive or stale accounts, tracking permissions, and detecting suspicious activities. The goal is to safeguard the organization’s resources, improve compliance with security standards, and enhance access control.
@@ -21,12 +24,13 @@ This project aims to implement a systematic process for reviewing and monitoring
 In the digital age, organizations are increasingly reliant on their IT infrastructure for conducting daily operations, and one of the most critical aspects of that infrastructure is effective Identity and Access Management (IAM). IAM systems are designed to control who has access to the company's resources and ensure that access is appropriate based on the user's role and responsibility within the organization. 
 The global Identity and Access Management (IAM) market generated revenues estimated at nearly 16 billion U.S. dollars in 2022 and is projected to reach a value of US$17.31 billion by 2023. It is forecasted that the market value of IAM will increase to 43.1 billion U.S. dollars by 2029 (https://www.statista.com/statistics/1445717/global-identity-and-access-management-market-value/)
 
+
  
 
 Source: https://www.fortunebusinessinsights.com/industry-reports/identity-and-access-management-market-100373
 
 Importance of IAM
-According to The Institute of Internal Auditors (The IIA) in the Global Technology Audit Guide (GTAG), it is important to examine why organizations embark on IAM projects. These include: 
+According to The Institute of Internal Auditors (IIA) in the Global Technology Audit Guide (GTAG), it is important to examine why organizations embark on IAM projects. These include: 
 •	Improved regulatory compliance. 
 •	Reduced information security risk. 
 •	Reduced IT operating and development costs. 
@@ -34,20 +38,24 @@ According to The Institute of Internal Auditors (The IIA) in the Global Technolo
 •	Improved user satisfaction. 
 •	Increased effectiveness of key business initiatives
 
-An IAM system is crucial for companies like SidodatTech, which manages users and their permissions but also audits activities and ensures compliance with regulatory standards. SidodatTech, a mid-sized financial services company, experienced a significant setback when it failed a compliance audit due to weak access control mechanisms and insufficient monitoring in its Active Directory (AD) environment. 
+An IAM system is crucial for companies like SidodatTech, which manages users and their permissions, audits activities, and ensures compliance with regulatory standards. SidodatTech, a mid-sized financial services company, experienced a significant setback when it failed a compliance audit due to weak access control mechanisms and insufficient monitoring in its Active Directory (AD) environment. 
 
 https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
 
 Active Directory Auditing and Compliance
 Active Directory (AD), a directory service developed by Microsoft, is a central component of IAM in many organizations due to its robust capabilities for managing users, groups, and permissions. Microsoft AD is a structured data repository for storing directory data objects. It can be used to manage your organization’s IT resources, such as network infrastructure, email services, public key infrastructure (PKI) services, and wireless services.  Active Directory (AD) is a critical component in many organizations, serving as the central system for managing user identities, permissions, and access to network resources. Its central role makes it a prime target for cyber attackers aiming to gain unauthorized access to sensitive information and systems.
 
-Compromising AD can grant attackers extensive control over an organization's IT infrastructure. The primary reasons include centralized control, privilege escalation, data exfiltration, persistence and lateral movement and difficulty in detection. Monitoring and auditing Active Directory (AD) are essential for maintaining security and compliance within an organization. According to Microsoft's best practices for securing Active Directory, it's crucial to monitor AD for signs of attack or compromise. This involves using legacy audit categories and audit policy subcategories, or Advanced Audit Policy, to detect unauthorized access, privilege escalations, or group policy modifications promptly. 
+Compromising AD can grant attackers extensive control over an organization's IT infrastructure. The primary reasons include centralized control, privilege escalation, data exfiltration, persistence and lateral movement, and difficulty in detection. Monitoring and auditing Active Directory (AD) are essential for maintaining security and compliance within an organization. According to Microsoft's best practices for securing Active Directory, it's crucial to monitor AD for signs of attack or compromise. This involves using legacy audit categories and audit policy subcategories, or Advanced Audit Policy, to detect unauthorized access, privilege escalations, or group policy modifications promptly. 
 
 Key Elements to Audit in Active Directory
 •	Logon Events: Track successful and failed logon attempts to identify potential brute force attacks or unauthorized access. 
+
 •	Privilege Escalation and Role Changes: Monitor changes to privileged groups or roles, such as additions to Domain Admins or Enterprise Admins, to prevent unauthorized access. 
+
 •	User Account Management: Detect the creation, deletion, or modification of user accounts, especially those involving administrative privileges or sensitive roles. 
+
 •	Group Policy Changes: Audit modifications to Group Policy Objects (GPOs), which can have a significant impact on network security and operations. Source: Microsoft Active Directory Security
+
 
 Tools for Auditing Active Directory
 Microsoft's Native Tools:

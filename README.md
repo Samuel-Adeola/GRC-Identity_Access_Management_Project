@@ -6,7 +6,9 @@ By viewing or utilizing this project, the reader acknowledges and agrees to thes
 
 ## Scenario Background:
 SidodatTech Enterprise Limited, a mid-sized financial services company, experienced a compliance audit failure due to weak access control mechanisms, insufficient audit logs, and improper user and group management in their Active Directory (AD) environment. Regulators identified the following issues:
+
 •	Lack of accountability for privileged user activities.
+
 •	Orphaned accounts belonging to former employees are still active in the system.
 •	Inconsistent role-based access control (RBAC) policies, leading to excessive permissions for users.
 •	Absence of audit trails for changes made to user accounts and security groups.

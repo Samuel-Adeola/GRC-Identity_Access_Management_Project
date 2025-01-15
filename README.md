@@ -356,68 +356,101 @@ Figure 5.1.3m: Splunk upgrade
 
 
 
+
 5.1.4	Configuring the NAT Network of the Virtual Box and Splunk Server
 
 •	Configuring the NAT Network of the Virtual Box 
 
+![SysmonFig3](https://github.com/user-attachments/assets/835648a3-07d8-4a22-a286-b40e017a8d85)
+
 Figure 5.1.4a: Virtual Box NAT Network set-up
-Configuring the NAT Network of the Virtual Box
- 
+
+•	Configuring the NAT Network of the Splunk Server 
+
+![SysmonFig4](https://github.com/user-attachments/assets/bfa4f66a-9079-43e8-9775-50e2ab467d0d)
 Figure 5.1.4b: Splunk NAT Network set-up
 
- 
+XXXXXX
 Figure 5.1.4c: Splunk NAT Network configuration
 
 
- 
+![SysmonFig20](https://github.com/user-attachments/assets/8a9b7e00-6129-4b7a-86fa-62496dd7df1f)
 Figure 5.1.4d:
 
-  
- 
+
+![SysmonFig22a](https://github.com/user-attachments/assets/6efc4831-1982-4796-8255-1773f1873385)
 Figure 5.1.4e:
 
 
- 
+![SysmonFig24](https://github.com/user-attachments/assets/0c204216-53ed-4bb0-a523-d0a34fdfe943)
 Figure 5.1.4f:
 
- 
+
+![SysmonFig25](https://github.com/user-attachments/assets/b7d0aca2-083b-4fde-91e7-23a096027534)
 Figure 5.1.4g:
- 
+
+
+![SysmonFig26](https://github.com/user-attachments/assets/51b8adf5-4c5b-4f7d-8e03-d8a319bc28ee)
 Figure 5.1.4h:
 
- 
+xxxxxx 
 Figure 5.1.4i:
- 
+
+
+![SysmonFig30a](https://github.com/user-attachments/assets/32ccd3f7-2381-4146-b8e5-4ab687bea21f)
+
 Figure 5.1.4j:
 
 
 Click on Add
  
+ 
+![SysmonFig31a](https://github.com/user-attachments/assets/feb1b88c-7bde-4207-a106-37fb2eb072ed)
+
 Figure 5.1.4k:
 
- 
+
+![SysmonFig31](https://github.com/user-attachments/assets/38d5a430-a257-4b81-a1ac-600e9053a632)
 Figure 5.1.4l:
 
- 
-				Figure 5.1.4m:
 
+![SysmonFig32](https://github.com/user-attachments/assets/a0cce85e-0178-44bc-9563-2064beea1fbb)
  
+Figure 5.1.4m:
+
+
+![SysmonFig33](https://github.com/user-attachments/assets/13bdd0c4-7178-431f-9a63-7136d8f21540)
+
 Figure 5.1.4n:
- 
+
+
+![SysmonFig34](https://github.com/user-attachments/assets/fa5f2b21-27f8-490c-9f67-822f1785d1cd)
+
 Figure 5.1.4o:
 
- 
+
+![SysmonFig35](https://github.com/user-attachments/assets/91fdaadb-6a08-4766-950d-8b6f8bf95aa8)
+
 Figure 5.1.4p:
- 
+
+
+![SysmonFig36](https://github.com/user-attachments/assets/656937df-da4f-4e84-81e0-6052de7c5488)
 Figure 5.1.4q:
 
- 
+
+![SysmonFig38](https://github.com/user-attachments/assets/ceb81509-c4b8-4f74-b2c8-ade287b38300)
 Figure 5.1.4r:
- 
-			Figure 5.1.4s:
+
+
+![SysmonFig40a](https://github.com/user-attachments/assets/48bbf943-1bfa-4339-87e2-f71e85e02d6c)
+
+Figure 5.1.4s:
+
+
 5.1.5	Installation and Configuration of Sysmon and Splunk Universal Forwarder on WorkStationMachine and Splunk Server
 Rename the target machine to WorkStationMachine:
  
+Figure 5.1.4s:
 
 Change the IP address 192.168.10.7 on the network adapter to 192.168.10.100 
 xxxxxxx

@@ -208,6 +208,8 @@ Figure 5.1.1k:
 
 Figure 5.1.1l: Windows 10 Pro Setup
 
+
+
 5.1.2	Windows Server 2022 Installation for Active Directory
 
 •	Downloading the ISO file from https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022 
@@ -277,73 +279,87 @@ Logon to the Active Directory Server
 Figure 5.1.2m:
 
 XXXXX
-Figure 5.1.2n: Server Manager created
+Figure 5.1.2n: Server Manager created.
+
 
 
 5.1.3	Ubuntu Server (Linux version 24.02 LTS) for Splunk Server
 
-Download Ubuntu Server from https://ubuntu.com/download/server#products
+•	Download Ubuntu Server from https://ubuntu.com/download/server#products
 
- 
+![Ubuntu-SplunkServerFig2](https://github.com/user-attachments/assets/36a1c6a1-bf28-4305-b878-d8a06e358409)
 Figure 5.1.3a: Ubuntu server download
 
- 
+
+![Ubuntu-SplunkServerFig4](https://github.com/user-attachments/assets/9affe84f-63a9-4f18-8997-eadfd681c42d)
 Figure 5.1.3b: Downloading Ubuntu server 
 
- 
+
+![Ubuntu-SplunkServerFig9](https://github.com/user-attachments/assets/5ab11641-c506-4b37-b841-7274be1ecc76)
 Figure 5.1.3c: Ubuntu server iso in the Downloads
 
 •	Ubuntu server installation on VirtualBox
- 
+
+![Ubuntu-SplunkServerFig10a](https://github.com/user-attachments/assets/569a8332-3ed8-4a6d-840b-6e6b1724f7e4)
 Figure 5.1.3d: Splunk Server installation in VirtualBox
 
 
-
-
-
-
-
-
- 
+![Ubuntu-SplunkServerFig10](https://github.com/user-attachments/assets/0dcb285a-8014-48e5-ba5a-62ed6418aa95)
 Figure 5.1.3e: Creating name and iso file uploading
 
-•	Set the to Base memory to 8GB and CPU to 2
- 
+•	Set the Base memory to 8GB and CPU to 2
+
+
+![Ubuntu-SplunkServerFig11](https://github.com/user-attachments/assets/bf08f33f-4c28-4128-96ff-299ede9615d1)
 Figure 5.1.3f: Hardware set-up
 
 
 
 •	Set the Hard disk size to 100GB
- 
+
+
+![Ubuntu-SplunkServerFig12 jpg](https://github.com/user-attachments/assets/31eb9509-3964-42f0-9b02-abdcc66e90bf)
 Figure 5.1.3g: Hard disk size configuration
 
-Splunk Configuration
- 
+
+![Ubuntu-SplunkServerFig13](https://github.com/user-attachments/assets/0001a962-8265-48a2-8ab6-635353c434f1)
 Figure 5.1.3h: Spunk installation 
 
+
 Splunk Configuration
+
 •	Select English and press Enter. Continue to select Done
- 
+
+![Ubuntu-SplunkServerFig14](https://github.com/user-attachments/assets/74364fcf-2998-43c1-949b-ba672a2749d4)
 Figure 5.1.3i: Splunk profile set-up
 
+
 Login credential set-up
- 
+
+![Ubuntu-SplunkServerFig18](https://github.com/user-attachments/assets/f9a64d5b-3355-456a-ac7c-abd823e1e421)
 Figure 5.1.3j: Splunk server installation login set-up
 
- 
-Figure 5.1.3k: Hard disk size set-up
 
- 
+![Ubuntu-SplunkServerFig22](https://github.com/user-attachments/assets/d24d91bf-af60-4612-b3d3-413882e4fbee)
+Figure 5.1.3k:
+
+
+![Ubuntu-SplunkServerFig26](https://github.com/user-attachments/assets/f22b404c-5e13-4f81-8794-e0785b9be919)
 Figure 5.1.3l: Spunk sign-in page
 
 
-Splunk upgrade and update the server
- 
+•	Splunk upgrade and update the server
+
+
+![Ubuntu-SplunkServerFig26](https://github.com/user-attachments/assets/877aedf5-72c4-420a-9e8e-d14d61876045)
 Figure 5.1.3m: Splunk upgrade
 
+
+
 5.1.4	Configuring the NAT Network of the Virtual Box and Splunk Server
-Configuring the NAT Network of the Virtual Box
- 
+
+•	Configuring the NAT Network of the Virtual Box 
+
 Figure 5.1.4a: Virtual Box NAT Network set-up
 Configuring the NAT Network of the Virtual Box
  

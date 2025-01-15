@@ -15,11 +15,6 @@ To address these challenges, SidodatTech aimed to design and implement an Identi
 This project aims to implement a systematic process for reviewing and monitoring user accounts in Active Directory (AD) to ensure proper Identity and Access Management (IAM). The focus will be on maintaining the principle of least privilege, identifying inactive or stale accounts, tracking permissions, and detecting suspicious activities. The goal is to safeguard the organization’s resources, improve compliance with security standards, and enhance access control.
 
 
-
-
-
-
-
 ## 1.0	Introduction
 In the digital age, organizations are increasingly reliant on their IT infrastructure for conducting daily operations, and one of the most critical aspects of that infrastructure is effective Identity and Access Management (IAM). IAM systems are designed to control who has access to the company's resources and ensure that access is appropriate based on the user's role and responsibility within the organization. 
 The global Identity and Access Management (IAM) market generated revenues estimated at nearly 16 billion U.S. dollars in 2022 and is projected to reach a value of US$17.31 billion by 2023. It is forecasted that the market value of IAM will increase to 43.1 billion U.S. dollars by 2029 (https://www.statista.com/statistics/1445717/global-identity-and-access-management-market-value/)
@@ -143,110 +138,141 @@ A total of four machines will be installed and configured on an Oracle Virtual B
 4.	Other installations will include Splunk Universal Forwarder, Windows Event Viewer, and Sysmon-Sysinternal
 
 5.1.1	Windows 10 Pro Installation for WorkStation Machine
+
 •	Download Windows ISO image file from https://www.microsoft.com/en-ca/software-download/windows10
+
 
 ![ADx Windows10Fig1](https://github.com/user-attachments/assets/984b9ce6-5c3e-4f32-8a9f-444557de955a)
 
 Figure 5.1.1a:
 
+
 ![ADx Windows10Fig2](https://github.com/user-attachments/assets/bdec870d-c537-408c-8b68-7fb9cb0506ac)
 Figure 5.1.1b:
+
 
 
 ![ADx Windows10Fig3](https://github.com/user-attachments/assets/7c12ebaf-a233-428a-96c6-bfd6d3557103)
 Figure 5.1.1c:
 
- 
+
+
+ ![ADx Windows10Fig6](https://github.com/user-attachments/assets/231b5665-674a-492c-af32-884148dbdb39)
+
 Figure 5.1.1d:
 
 
- 
-Figure 5.1.1d: Windows 10 media creation tool 
+![ADx Windows10Fig6](https://github.com/user-attachments/assets/40a9e117-de9b-4b45-9c43-b77a1111b4aa)
+
+Figure 5.1.1e: Windows 10 media creation tool 
 
 
 
 
 
 •	Windows 10 Installation in Virtual Box
- 
-Figure 5.1.1e:
 
- 
+![ADx Windows10Fig10](https://github.com/user-attachments/assets/7478cc9c-496f-4931-b62b-1c927d79f507)
+
 Figure 5.1.1f:
 
- 
+
+![ADx Windows10Fig7](https://github.com/user-attachments/assets/00baf969-8f1a-4f8d-8567-cb1365d68fd5)
+
 Figure 5.1.1g:
 
+
+![ADx Windows10Fig9](https://github.com/user-attachments/assets/dbd43619-d0bf-46cb-a8a0-6d459082051a)
+
+Figure 5.1.1h:
+
 Creating Windows 10 Pro Virtual Machine on VirtualBox
- 
-Figure 5.1.1h: Windows 10 Pro WorkStation Machine
- 
-Figure 5.1.1i:
 
 
- 
+![ADx Windows10Fig11](https://github.com/user-attachments/assets/e759e6ab-e128-42b8-bc93-1c7a61b1f6c5)
+
+Figure 5.1.1i: Windows 10 Pro WorkStation Machine
+
+![ADx Windows10Fig12](https://github.com/user-attachments/assets/bccd1797-cf02-4472-8b79-f022010c2e8d)
+
 Figure 5.1.1j:
+Accept the Licence Agreement
 
- 
-Figure 5.1.1k: Windows 10 Pro Setup
+
+![ADx Windows10Fig16](https://github.com/user-attachments/assets/4d76e21f-8b7f-40a5-95d5-3dbb30c417ed)
+
+Figure 5.1.1k:
+
+
+![ADx Windows10Fig18](https://github.com/user-attachments/assets/ccd6796c-fa46-4173-b804-e7818c738a0c)
+
+Figure 5.1.1l: Windows 10 Pro Setup
 
 5.1.2	Windows Server 2022 Installation for Active Directory
-Downloading the ISO file from https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022
- 
+
+•	Downloading the ISO file from https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022 
+
+![AD WindowsServerFig1](https://github.com/user-attachments/assets/e96387db-7b8d-4318-9547-30b4f6e081de)
+
 Figure 5.1.2a: Windows Server 2022
 
 
- 
+![AD WindowsServerFig2](https://github.com/user-attachments/assets/2a02c4cf-d8d6-426c-aef7-427d8d2a55aa)
+
 Figure 5.1.2b: Windows Server 2022 iso
 
 
- 
+ ![AD WindowsServerFig5](https://github.com/user-attachments/assets/3e0daf08-2a08-4fa1-825d-7f4b2474e916)
+
 Figure 5.1.2c: Windows Server 2022 in the Downloads
 
 
-
-
-
-
-
-
-
-
-
-
-
 •	Add the Windows Server 2022 ISO file to the VirtualBox
- 
+
+![AD WindowsServerFig11](https://github.com/user-attachments/assets/90085aa2-cc47-44b3-9f57-ce4232f76d86)
+
 Figure 5.1.2d:
 
- 
+![AD WindowsServerFig12](https://github.com/user-attachments/assets/257b23db-4ed4-46ae-a997-99f872d1edb4)
+
 Figure 5.1.2e:
 
- 
+
+![AD WindowsServerFig13](https://github.com/user-attachments/assets/92b383c1-9bdf-4756-b0d4-6df9e4cca491)
+
 Figure 5.1.2f:
 
- 
+![AD WindowsServerFig14](https://github.com/user-attachments/assets/90433b9e-30c8-4d78-897a-9d41e6a75a2e)
 Figure 5.1.2g:
- 
+
+![AD WindowsServerFig15](https://github.com/user-attachments/assets/08c70839-aa3b-4dd5-8b11-c7ad3496f9ad)
+
 Figure 5.1.2h: 
 
- 
+![AD WindowsServerFig16](https://github.com/user-attachments/assets/eb110b96-6a24-42f1-8c6f-ee0d7ce79a17)
+
 Figure 5.1.2i:
 
 
- 
+![AD WindowsServerFig17](https://github.com/user-attachments/assets/de612023-95b0-4ae1-b744-91423a1b5af1)
 Figure 5.1.2j:
 
-•	Setting-up the Windows server 2022
-Create Logon credentials
- 
-Figure 5.1.2k : Create login details
+
+•	Setting up the Windows Server 2022
+Create Login Credentials
+
+![AD WindowsServerFig18](https://github.com/user-attachments/assets/8b845654-a1c3-44f5-aceb-63bf76c5ee32)
+
+Figure 5.1.2k: Create login details
 
 •	Select Devices >> Keyboard >> Insert Ctrl-ALT-Del
- 
+
+
+![AD WindowsServerFig19](https://github.com/user-attachments/assets/9ef2ffd4-8ac3-4487-854f-f6c97c2e9f24)
+
 Figure 5.1.2l:
 
-Logn to the Active Directory Server
+Logon to the Active Directory Server
  
 Figure 5.1.2m:
 
@@ -255,6 +281,7 @@ Figure 5.1.2n: Server Manager created
 
 
 5.1.3	Ubuntu Server (Linux version 24.02 LTS) for Splunk Server
+
 Download Ubuntu Server from https://ubuntu.com/download/server#products
 
  

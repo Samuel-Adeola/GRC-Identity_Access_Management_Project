@@ -1,0 +1,68 @@
+# List of SidodatTech eight OUs to be created
+$ouList = @(
+    "Management",
+    "HR",
+    "IT",
+    "Finance",
+    "Sales",
+    "Legal",
+    "Client Services",
+    "Product Support"
+)
+
+# Base DN where OUs will be created
+$baseDN = "DC=SidodatTech,DC=local"
+
+# Initialize an array to hold results
+$results = @()
+
+# Folder path for export
+$exportPath = "C:\Documents\SidodatTechOU"
+$exportFile = "$exportPath\SidodatTech_OU.xml"
+
+# Ensure export directory exists
+if (-not (Test-Path -Path $exportPath)) {
+    New-Item -ItemType Directory -Path $exportPath
+}
+
+# Create each OU
+foreach ($ou in $ouList) {
+    $ouPath = "OU=$ou,$baseDN"
+
+    try {
+        # Check if OU already exists
+        if (Get-ADOrganizationalUnit -Filter "DistinguishedName -eq '$ouPath'" -ErrorAction SilentlyContinue) {
+            Write-Host "OU '$ou' already exists. Skipping..." -ForegroundColor Yellow
+            $results += [PSCustomObject]@{
+                OUName       = $ou
+                Status       = "Exists"
+                ActionTaken  = "No Action Taken"
+            }
+        } else {
+            # Create the OU
+            New-ADOrganizationalUnit -Name $ou -Path $baseDN
+            Write-Host "OU '$ou' created successfully." -ForegroundColor Green
+            $results += [PSCustomObject]@{
+                OUName       = $ou
+                Status       = "Created"
+                ActionTaken  = "OU Created Successfully"
+            }
+        }
+    } catch {
+        # Log any errors
+        Write-Host "Failed to create OU '$ou'. Error: $_" -ForegroundColor Red
+        $results += [PSCustomObject]@{
+            OUName       = $ou
+            Status       = "Failed"
+            ActionTaken  = "Error Occurred: $($_.Exception.Message)"
+        }
+    }
+}
+
+# Export results to XML file
+$results | Export-Clixml -Path $exportFile
+
+# Display results in table format
+$results | Format-Table -AutoSize
+
+Write-Host "OU creation process completed. Results exported to $exportFile." -ForegroundColor Green

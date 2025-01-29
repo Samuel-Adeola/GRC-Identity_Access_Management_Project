@@ -1,30 +1,30 @@
 ## Project Title: Automating an Audit-Driven Identity and Access Management Framework in Active Directory with Enhanced Security and Compliance
 
 ## Disclaimer Notice:
-The use of the name "SidodatTech" in this project is for illustrative and educational purposes only. SidodatTech is a fictional company created for the purpose of this project. Any resemblance to real companies or organizations and individual, living or dead, is purely coincidental. The information provided is intended for educational and research purposes. SidodatTech and other names used in this project, does not endorse, sponsor, or approve of any of the content, methodologies, or recommendations presented herein. All opinions, conclusions, and recommendations expressed in this project are solely those of the author and do not represent the views or positions of any actual company or organization.
+The use of the name "SidodatTech" in this project is for illustrative and educational purposes only. SidodatTech is a fictional company created for this project. Any resemblance to real companies or organizations and individuals, living or dead, is purely coincidental. The information provided is intended for educational and research purposes. SidodatTech and other names used in this project, do not endorse, sponsor, or approve of any of the content, methodologies, or recommendations presented herein. All opinions, conclusions, and recommendations expressed in this project are solely those of the author and do not represent the views or positions of any actual company or organization.
 By viewing or utilizing this project, the reader acknowledges and agrees to these terms and conditions.
 
 ## Scenario Background:
 SidodatTech Enterprise Limited, a mid-sized financial services company, experienced a compliance audit failure due to weak access control mechanisms, insufficient audit logs, and improper user and group management in their Active Directory (AD) environment. Regulators identified the following issues:
 •	Lack of accountability for privileged user activities.
-•	Orphaned accounts belonging to former employees still active in the system.
+•	Orphaned accounts belonging to former employees are still active in the system.
 •	Inconsistent role-based access control (RBAC) policies, leading to excessive permissions for users.
 •	Absence of audit trails for changes made to user accounts and security groups.
 To address these challenges, SidodatTech aimed to design and implement an Identity and Access Management (IAM) framework that emphasizes auditing in Active Directory to ensure compliance, enhance security posture, and prevent unauthorized access.
 
-This project aims to implement a systematic process for reviewing and monitoring user accounts in Active Directory (AD) to ensure proper Identity and Access Management (IAM). The focus will be on maintaining the principle of least privilege, identifying inactive or stale accounts, tracking permissions, and detecting suspicious activities. The goal is to safeguard the organization’s resources, improve compliance with security standards, and enhance access control.
+This project aims to systematically review and monitor user accounts in Active Directory (AD) to ensure proper Identity and Access Management (IAM). The focus will be on maintaining the principle of least privilege, identifying inactive or stale accounts, tracking permissions, and detecting suspicious activities. The goal is to safeguard the organization’s resources, improve compliance with security standards, and enhance access control.
 
 
 ## 1.0	Introduction
-In the digital age, organizations are increasingly reliant on their IT infrastructure for conducting daily operations, and one of the most critical aspects of that infrastructure is effective Identity and Access Management (IAM). IAM systems are designed to control who has access to the company's resources and ensure that access is appropriate based on the user's role and responsibility within the organization. 
-The global Identity and Access Management (IAM) market generated revenues estimated at nearly 16 billion U.S. dollars in 2022 and is projected to reach a value of US$17.31 billion by 2023. It is forecasted that the market value of IAM will increase to 43.1 billion U.S. dollars by 2029 (https://www.statista.com/statistics/1445717/global-identity-and-access-management-market-value/)
+In the digital age, organizations increasingly rely on their IT infrastructure for daily operations, and one of the most critical aspects of that infrastructure is effective Identity and Access Management (IAM). IAM systems are designed to control who has access to the company's resources and ensure that access is appropriate based on the user's role and responsibility within the organization. 
+The global Identity and Access Management (IAM) market generated revenues estimated at nearly 16 billion U.S. dollars in 2022 and is projected to reach US$17.31 billion by 2023. It is forecasted that the market value of IAM will increase to 43.1 billion U.S. dollars by 2029 (https://www.statista.com/statistics/1445717/global-identity-and-access-management-market-value/)
 
  
 
 Source : https://www.fortunebusinessinsights.com/industry-reports/identity-and-access-management-market-100373
 
 Importance of IAM
-According to The Institute of Internal Auditors (The IIA) in Global Technology Audit Guide (GTAG), it is important to examine the many reasons why organizations embark on IAM projects. These include: 
+According to The Institute of Internal Auditors (IIA) in the Global Technology Audit Guide (GTAG), it is important to examine the many reasons why organizations embark on IAM projects. These include: 
 •	Improved regulatory compliance. 
 •	Reduced information security risk. 
 •	Reduced IT operating and development costs. 
@@ -32,7 +32,7 @@ According to The Institute of Internal Auditors (The IIA) in Global Technology A
 •	Improved user satisfaction. 
 •	Increased effectiveness of key business initiatives
 
-For companies like SidodatTech, an IAM system that not only manages users and their permissions but also audits activities and ensures compliance with regulatory standards is crucial. SidodatTech, a mid-sized financial services company, experienced a significant setback when they failed a compliance audit due to weak access control mechanisms and insufficient monitoring in their Active Directory (AD) environment. 
+For companies like SidodatTech, an IAM system that manages users and their permissions, audits activities, and ensures compliance with regulatory standards is crucial. The mid-sized financial services company experienced a significant setback when it failed a compliance audit due to weak access control mechanisms and insufficient monitoring in its Active Directory (AD) environment. 
 
 https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
 
@@ -60,11 +60,11 @@ Customizable dashboards and reports.
 By systematically auditing and monitoring Active Directory, organizations can enhance their security posture, ensure compliance, and reduce the risk of unauthorized access or breaches.
 
 ## 2.0	Scope
-The project aims to design and implement a robust audit-driven Identity and Access Management framework using Active Directory (AD) to enhance security, ensures regulatory compliance, and prevents unauthorized access through effective auditing, role management, monitoring and improve accountability within the organization’s IT environment.
+The project aims to design and implement a robust audit-driven Identity and Access Management framework using Active Directory (AD) to enhance security, ensure regulatory compliance, and prevent unauthorized access through effective auditing, role management, and monitoring, and improve accountability within the organization’s IT environment.
 
 3.0	Project Objectives
 The goal of this project is to implement a robust audit-driven IAM framework, focusing on the following objectives:
-1.	Install and configure Windows 10 Workstation, Ubuntu server for Splunk, Windows server 2022 for Active Directory Server and Kali Linux.
+1.	Install and configure Windows 10 Workstation, Ubuntu server for Splunk, Windows server 2022 for Active Directory Server, and Kali Linux.
 2.	To establish robust, audit-focused Identity and Access Management (IAM) policies within Active Directory to effectively govern privileges, access permissions, user accounts, service accounts, and group memberships, ensuring security and compliance alignment.
 3.	Automate User Account Lifecycle Management of user account creation, modification, and deactivation process to effectively reduce the risks from orphaned or inactive accounts and stale permissions.
 4.	Deploy real-time monitoring and anomaly detection mechanisms to identify unauthorized access, privilege escalations, or group policy modifications promptly, ensuring swift threat mitigation.
@@ -73,10 +73,10 @@ The goal of this project is to implement a robust audit-driven IAM framework, fo
 
 ## 3.0  Technologies and Tools:
 •	A computer system with 16GB RAM
-•	A virtual machine preferably Oracle virtual Box
-•	Windows server 2010 pro (WorkstationMachine)
+•	A virtual machine preferably Oracle Virtual Box
+•	Windows Server 2010 pro (WorkstationMachine)
 •	Windows 2022 Server for Active Directory (AD-DC)
-•	Ubuntu Server (Linux version 24.02 Lts) : For Splunk Server
+•	Ubuntu Server (Linux version 24.02 Lts): For Splunk Server
 •	SIEM - Splunk
 •	Sysmon-Sysinternal
 •	Splunk Universal Forwarder
@@ -85,30 +85,72 @@ The goal of this project is to implement a robust audit-driven IAM framework, fo
 
 ## 4.0 Methodology:
 Phase 1 – Planning:
+
 This phase focuses on preparing for the project's implementation by addressing resource allocation, communication, stakeholder engagement, and timeline considerations. The activities include:
+
 •	Identify and procure necessary hardware and software (e.g., systems with 8GB RAM, Oracle VirtualBox, Windows Server, Ubuntu Server, and Splunk).
+
 •	Assess and select free or cost-effective editions of required tools, ensuring their compatibility and security.
+
 •	Define communication channels and medium for the project 
+
 •	Schedule stakeholder meetings for each phase of the project that align with project goals.
+
 •	Document project disclaimers, legal considerations, tools, technologies, resources, designs, processes, changes, and expected outcomes.
+
 •	Draft a comprehensive project timeline.
+
 Expected output: A detailed project plan, including schedules, resources, and tools inventory.
 
 Phase 2 – Project Design:
+
 This phase involves designing the technical and logical architecture required to achieve the project's objectives. The project is divided into three main sub-stages:
-1.	Installation and Configuration of Machines: Install and configure Windows 10 Workstation, Ubuntu Server for Splunk, Windows Server 2022 for AD on within Oracle VirtualBox.
-2.	Active Directory Configuration: Set up Active Directory, including domain controllers and group policy objects (GPOs) and define initial role-based access control (RBAC) policies and audit parameters.
+
+1.	Installation and Configuration of Machines: Install and configure Windows 10 Workstation, Ubuntu Server for Splunk, and Windows Server 2022 for AD within Oracle VirtualBox.
+
+2.	Active Directory Configuration: Set up Active Directory, including domain controllers and group policy objects (GPOs), and define initial role-based access control (RBAC) policies and audit parameters.
+
 3.	SIEM Integration and Monitoring Setup: Configure Splunk and Splunk Universal Forwarder to collect and aggregate logs from Active Directory and deploy Sysmon-Sysinternal for advanced event monitoring.
+
 Expected output: A fully designed framework, including system architecture and configurations.
 
+
 Phase 3 – Implementation:
-This phase involves putting the designs into action to create the audit-driven IAM framework. Major activities at implementation stage are:
+
+This phase involves putting the designs into action to create the audit-driven IAM framework. Major activities at the implementation stage are:
+
 •	Deploy and validate the configuration of all machines and software.
+
 •	Implement automated workflows for user account lifecycle management (e.g., account creation, modification, and deactivation).
+
 •	Enable real-time monitoring and alerting for unauthorized access and privilege escalation using Splunk and Sysmon.
+
 •	Enforce RBAC and ensure users only have access relevant to their roles.
+
 •	Implement audit trails for all AD activities, ensuring logs are comprehensive and tamper-proof.
+
+•	Create User Accounts and Service Accounts  in their respective Organisational Units.
+
+•	Create separate administrative groups with restricted permissions and establish a monitoring system for privileged accounts.
+
+•	Review and revise Active Directory settings to enforce strong password policies, account lockouts, and a classification system based on the principle of least privilege.
+
+•	Conduct a business function review to create specific roles, ensuring users only have access to the resources necessary for their job functions.
+
+•	Configure ACLs in AD to ensure appropriate permissions are applied to different user groups based on their roles.
+
+•	Develop a PowerShell script to identify orphaned accounts by comparing Active Directory data with HR records. The script will automatically disable or remove these accounts.
+
+•	Implement regular checks for inactive or unnecessary accounts.
+
+•	Configure Active Directory to log changes to user accounts, security groups, and group memberships. All administrative activities will be tracked and logged for accountability.
+
+•	Use tools like Splunk or Microsoft Advanced Threat Analytics (ATA) to collect and analyze logs for unusual or suspicious activities.
+
+•	Set up automated alerts for suspicious changes, such as unauthorized group memberships or changes in user permissions.
+
 Expected output: A fully functional IAM framework in the Active Directory environment.
+
 
 
 

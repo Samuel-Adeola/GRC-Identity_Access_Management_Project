@@ -1,114 +1,125 @@
 ## Project Title: Automating an Audit-Driven Identity and Access Management Framework in Active Directory with Enhanced Security and Compliance
 
 ## Disclaimer Notice:
-The use of the name "SidodatTech" in this project is for illustrative and educational purposes only. SidodatTech is a fictional company created for this project. Any resemblance to real companies or organizations and individuals, living or dead, is purely coincidental. The information provided is intended for educational and research purposes. SidodatTech and other names used in this project, do not endorse, sponsor, or approve of any of the content, methodologies, or recommendations presented herein. All opinions, conclusions, and recommendations expressed in this project are solely those of the author and do not represent the views or positions of any actual company or organization.
-By viewing or utilizing this project, the reader acknowledges and agrees to these terms and conditions.
+The use of the name "SidodatTech" in this project is for illustrative and educational purposes only. SidodatTech is a fictional company created for this project. Any resemblance to real companies, organizations, or individuals, living or dead, is purely coincidental. The information provided is intended for educational and research purposes. SidodatTech and other names used in this project do not endorse, sponsor, or approve any content, methodologies, or recommendations presented herein. All opinions, conclusions, and recommendations expressed in this project are solely those of the author and do not represent the views or positions of any actual company or organization. By viewing or utilizing this project, the reader acknowledges and agrees to these terms and conditions.
 
-## Scenario Background:
-SidodatTech Enterprise Limited, a mid-sized financial services company, experienced a compliance audit failure due to weak access control mechanisms, insufficient audit logs, and improper user and group management in their Active Directory (AD) environment. Regulators identified the following issues:
+##	Scenario Background: SidodatTech AD DS Implementation and Management
+SidodatTech Enterprise Limited is a mid-sized financial services company operating in a regulated environment, with a strong focus on digital transformation, client data protection, and compliance with industry standards such as ISO/IEC 27001, PCI-DSS, SOX, and local financial regulatory requirements. The organization’s Active Directory (AD) infrastructure serves as the backbone for user authentication, system access, and identity management across both its on-premises and hybrid cloud environments.
+During a recent external compliance audit conducted by third-party assessors, SidodatTech experienced a significant audit failure due to critical deficiencies in its Identity and Access Management (IAM) and Active Directory governance practices. These failures highlighted systemic vulnerabilities and exposed the organization to compliance violations, insider threats, and reputational damage.
 
-•	Lack of accountability for privileged user activities.
+Key findings from the audit include:
 
-•	Orphaned accounts belonging to former employees are still active in the system.
+•	Insufficient access controls and lack of alignment between user roles and granted permissions, violating the principle of least privilege.
 
-•	Inconsistent role-based access control (RBAC) policies, leading to excessive permissions for users.
+•	Presence of orphaned and inactive accounts associated with former employees, contractors, and service accounts posing a risk of unauthorized access.
 
-•	Absence of audit trails for changes made to user accounts and security groups.
+•	Absence of centralized, role-based access control (RBAC) structures, resulting in ad-hoc access provisioning and excessive permissions.
 
-To address these challenges, SidodatTech aimed to design and implement an Identity and Access Management (IAM) framework that emphasizes auditing in Active Directory to ensure compliance, enhance security posture, and prevent unauthorized access.
+•	Inadequate audit trails and logging mechanisms, preventing traceability of user activities and privilege escalations.
 
-This project aims to systematically review and monitor user accounts in Active Directory (AD) to ensure proper Identity and Access Management (IAM). The focus will be on maintaining the principle of least privilege, identifying inactive or stale accounts, tracking permissions, and detecting suspicious activities. The goal is to safeguard the organization’s resources, improve compliance with security standards, and enhance access control.
+•	Lack of automated processes for user provisioning, de-provisioning, and role reassignment, leading to manual errors and delayed account updates.
+
+•	Unsegmented administrative access, where multiple privileged users share global access without justification or segregation of duties (SoD) enforcement.
+
+These deficiencies significantly increased SidodatTech’s exposure to regulatory fines, operational disruptions, and insider threats, with downstream effects on its digital services, client trust, and audit readiness. In response, executive leadership approved a strategic initiative to remediate these IAM weaknesses by implementing an automated, audit-driven IAM framework within Active Directory. The solution aims to improve governance, automate identity lifecycle processes, and strengthen compliance posture using an Agile delivery model—allowing for incremental improvement and continuous feedback.
+
+This project will serve as a foundational step in aligning SidodatTech’s access control environment with industry best practices, enabling proactive monitoring, policy enforcement, and scalable integration with future IAM solutions, including identity federation and zero-trust architecture.
+
+## Executive Summary 
+
+SidodatTech Enterprise Limited, a mid-sized financial services organization, has launched a strategic initiative to address the findings of a recent compliance audit that revealed severe deficiencies in its Active Directory (AD)-based Identity and Access Management (IAM) framework. These deficiencies included the presence of orphaned user accounts belonging to former employees, excessive and unregulated privileges due to inconsistent role-based access control (RBAC), a lack of audit trails for changes made to user and group accounts, and insufficient monitoring of privileged user activities. These gaps not only exposed the company to regulatory non-compliance but also increased the risk of data breaches, insider threats, and operational inefficiencies. In response, this project aims to design and implement an automated, audit-driven IAM framework that strengthens security, enhances compliance, and aligns user access with organizational policy through RBAC standardization and lifecycle management.
+
+The outcome of this project is expected to produce tangible, measurable improvements. By the end of the implementation, the organization will have eliminated 100% of orphaned accounts in Active Directory, reduced excessive user permissions by at least 95% through RBAC enforcement, achieved 100% traceability of privileged activities via centralized audit logging, and fully remediated audit findings. Additionally, automation of user provisioning and de-provisioning processes is projected to result in a 30% reduction in administrative workload and time spent on access-related tasks.
+
+Risk management is a cornerstone of this initiative. The project employs a structured approach to identify, assess, and mitigate risks related to unauthorized access, policy violations, and audit failures. Regular access reviews, automation of identity processes, and continuous monitoring of privileged account usage are integrated to reduce the attack surface and maintain adherence to compliance frameworks. Risk is measured both pre- and post-implementation using a residual risk scoring model, ensuring that control improvements directly reduce exposure and align with the organization's security governance policies.
+
+A Business Impact Analysis (BIA) conducted during the planning phase highlighted that unresolved IAM issues could lead to substantial regulatory fines, client data exposure, and operational downtime. The ability of employees and systems to operate securely and efficiently hinges on proper access control. Therefore, this project plays a critical role in reducing the likelihood and impact of these scenarios by establishing accountability, ensuring only authorized personnel have access to sensitive systems, and minimizing the risk of data compromise or misuse.
+
+In terms of business continuity, the IAM framework supports critical operational resilience. By embedding access control measures into the broader business continuity and disaster recovery strategies, the company can ensure that, even during disruptions or emergency situations, access is appropriately maintained, restricted, or adjusted in real-time. This level of automation and control is essential to maintaining trust, service delivery, and compliance under adverse conditions.
+
+The project follows an Agile methodology to enable flexibility, iterative development, and continuous stakeholder involvement. The implementation is divided into six two-week sprints, each dedicated to a distinct area of IAM, such as account cleanup, RBAC modeling, audit trail configuration, and automation integration. Agile ceremonies including daily stand-ups, sprint planning, and retrospectives, ensure that the team responds promptly to feedback and evolving compliance requirements. Each sprint culminates in a stakeholder demonstration to validate progress and maintain alignment with business goals. This iterative model allows for rapid adaptation to challenges, early delivery of high-priority features, and overall improved project success.
+
+By automating access governance and embedding audit capabilities across the identity lifecycle, SidodatTech is not only closing compliance gaps but also laying the groundwork for a resilient, secure, and scalable IT environment.
+
+## Project Background
+
+In the rapidly evolving regulatory and threat landscape of the financial services sector, Identity and Access Management (IAM) is no longer a convenience—it's a compliance and security imperative. SidodatTech Enterprise Limited, a mid-sized financial institution offering digital lending and asset management services, recently underwent a routine compliance audit triggered by industry regulatory bodies. The audit uncovered significant deficiencies in the organization’s Identity and Access Management (IAM) practices, particularly within its on-premises Microsoft Active Directory (AD) environment, which serves as the backbone for authentication, authorization, and access control across enterprise systems.
+
+As financial institutions handle sensitive customer data and are prime targets for threat actors, these findings elevated the risk posture of the organization, both from a regulatory and operational standpoint. Upon internal review and consultation with external security auditors, it became clear that manual, inconsistent, and siloed IAM processes were not only impeding operational efficiency but also increasing the risk of data breaches, insider threats, and non-compliance with frameworks such as ISO/IEC 27001, SOX, and GDPR. To address these challenges, SidodatTech initiated a project to design and implement a fully automated, audit-driven IAM framework that enhances security, ensures regulatory compliance, and aligns with industry best practices. The framework is intended to eliminate control gaps, enforce the principle of least privilege, provide full visibility into user account lifecycle events, and deliver automated audit logs to support governance, risk management, and compliance (GRC) operations.
+
+This initiative will be executed using the Agile project methodology to ensure iterative progress, stakeholder collaboration, rapid deployment of features, and continuous improvement based on real-time feedback. The outcome will not only resolve current audit findings but also position SidodatTech as a security-forward enterprise capable of scaling IAM capabilities in response to emerging threats and compliance mandates.
 
 
 ## 1.0	Introduction
-In the digital age, organizations increasingly rely on their IT infrastructure for daily operations, and one of the most critical aspects of that infrastructure is effective Identity and Access Management (IAM). IAM systems are designed to control who has access to the company's resources and ensure that access is appropriate based on the user's role and responsibility within the organization. 
-The global Identity and Access Management (IAM) market generated revenues estimated at nearly 16 billion U.S. dollars in 2022 and is projected to reach US$17.31 billion by 2023. It is forecasted that the market value of IAM will increase to 43.1 billion U.S. dollars by 2029 (https://www.statista.com/statistics/1445717/global-identity-and-access-management-market-value/)
 
- 
+In the modern digital enterprise, Identity and Access Management (IAM) serves as the cornerstone of cybersecurity and compliance strategy. As organizations increasingly digitize operations and migrate to hybrid cloud infrastructures, the risk of unauthorized access, insider threats, data breaches, and compliance violations has surged. Identity is the new security perimeter, and without effective IAM practices, enterprises are left vulnerable to both internal and external threats.
 
-Source : https://www.fortunebusinessinsights.com/industry-reports/identity-and-access-management-market-100373
+SidodatTech Enterprise Limited, a mid-sized financial services company, recently faced increasing regulatory pressures to uphold strong security and compliance postures. Identity and Access Management (IAM) has become a critical component of cybersecurity governance. However, a recent compliance audit at SidodatTech uncovered significant deficiencies in their Active Directory (AD) configuration, highlighting the need for a more structured and automated IAM framework. Key concerns included the presence of orphaned accounts, unmonitored privileged access, inconsistent role-based access assignments, and a lack of comprehensive audit logging. Such gaps not only expose organizations to internal and external threats but also breach key regulatory standards like ISO/IEC 27001, SOX, and NIST SP 800-53, posing severe financial, reputational, and legal consequences. Recognizing the urgency and severity of these issues, SidodatTech has initiated a strategic project to automate an audit-driven IAM framework in AD. This initiative is designed not only to address current compliance gaps but also to establish a robust, scalable, and secure access control infrastructure aligned with industry global best practices.
 
-Importance of IAM
-According to The Institute of Internal Auditors (IIA) in the Global Technology Audit Guide (GTAG), it is important to examine the many reasons why organizations embark on IAM projects. These include: 
+The need for a robust IAM framework is reinforced by global cybersecurity trends, with IAM becoming the backbone of enterprise security, especially in hybrid work settings and cloud-integrated infrastructures. According to the Gartner IAM Market Guide (2024), 85% of security incidents involve misuse of credentials or poorly managed access rights, with 61% directly linked to ineffective IAM controls [1]. The 2024 Cost of a Data Breach Report by the Ponemon Institute and IBM indicates that organizations lacking automated IAM systems face an average $1.3 million higher breach cost compared to those with integrated access management solutions [2]. In addition, the Ponemon Institute and Saviynt’s 2023 State of IAM Maturity Report found that 74% of organizations experience delays in removing access for departed employees, and 62% lack centralized visibility into privileged accounts. Moreover, Cybersecurity Ventures projects global IAM spending to surpass $25 billion USD by 2026, highlighting the sector’s growing prioritization of access governance [3].
 
-•	Improved regulatory compliance. 
+This project, “Automating an Audit-Driven Identity and Access Management Framework in Active Directory with Enhanced Security and Compliance using Agile Model,” initiated by SidodatTech, is designed to automate a scalable, audit-focused IAM framework within its Active Directory infrastructure to strengthen security and sustain compliance. The project will focus on automating account reviews, implementing a structured RBAC model, removing orphaned accounts, logging administrative activity, and integrating audit trails with centralized SIEM systems. Leveraging Agile methodology will guide the project’s execution, enabling rapid iteration, continuous feedback, cross-functional collaboration, and faster time-to-value. Through structured sprints and prioritized deliverables, SidodatTech aims to foster a culture of accountability, visibility, and access hygiene across its enterprise.
 
-•	Reduced information security risk. 
-
-•	Reduced IT operating and development costs. 
-
-•	Improved operating efficiencies and transparency. 
-
-•	Improved user satisfaction. 
-
-•	Increased effectiveness of key business initiatives
-
-For companies like SidodatTech, an IAM system that manages users and their permissions, audits activities, and ensures compliance with regulatory standards is crucial. The mid-sized financial services company experienced a significant setback when it failed a compliance audit due to weak access control mechanisms and insufficient monitoring in its Active Directory (AD) environment. 
-
-https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/audit-policy-recommendations
+Ultimately, this initiative represents more than a corrective measure it is a strategic investment in SidodatTech’s long-term security maturity, operational integrity, and compliance readiness in a risk-sensitive and regulated industry.
 
 
+## 2.0	Project Scope
 
-Active Directory Auditing and Compliance
-Active Directory (AD), a directory service developed by Microsoft, is a central component of IAM in many organizations due to its robust capabilities for managing users, groups, and permissions. Microsoft AD is a structured data repository for storing directory data objects. It can be used to manage your organization’s IT resources, such as network infrastructure, email services, public key infrastructure (PKI) services, and wireless services.  Active Directory (AD) is a critical component in many organizations, serving as the central system for managing user identities, permissions, and access to network resources. Its central role makes it a prime target for cyber attackers aiming to gain unauthorized access to sensitive information and systems.
+This project encompasses the full lifecycle of planning, designing, implementing, and operationalizing an automated, audit-driven Identity and Access Management (IAM) framework within SidodatTech’s Active Directory (AD) environment. The scope includes all user accounts, groups, organizational units (OUs), and administrative roles across the organization’s on-premises and hybrid AD infrastructure.
 
-Compromising AD can grant attackers extensive control over an organization's IT infrastructure. The primary reasons include centralized control, privilege escalation, data exfiltration, persistence and lateral movement and difficulty in detection. Monitoring and auditing Active Directory (AD) are essential for maintaining security and compliance within an organization. According to Microsoft's best practices for securing Active Directory, it's crucial to monitor AD for signs of attack or compromise. This involves using legacy audit categories and audit policy subcategories, or Advanced Audit Policy, to detect unauthorized access, privilege escalations, or group policy modifications promptly. 
+The core focus is to enhance identity governance by implementing consistent Role-Based Access Control (RBAC), automating user provisioning and de-provisioning processes, and integrating audit mechanisms to monitor privileged access and account changes. All legacy and inactive accounts will be reviewed, validated, and either remediated or deactivated to align with compliance mandates and internal security policies. The scope also includes the design of automated workflows for access approvals, terminations, and role changes using PowerShell scripting and integration with existing HR and ITSM systems.
 
-Key Elements to Audit in Active Directory
+Additionally, the project covers the deployment of a centralized audit logging and monitoring solution to provide real-time visibility into access control events, and to enable forensic analysis during security audits or incidents. The IAM framework will be assessed and tested against compliance frameworks such as ISO/IEC 27001, NIST SP 800-53, CIS Controls, and applicable financial sector regulatory requirements.
 
-•	Logon Events: Track successful and failed logon attempts to identify potential brute force attacks or unauthorized access. 
+Out of scope for this project are broader enterprise security functions not directly related to identity lifecycle management, such as multifactor authentication (MFA) rollout, cloud-native IAM systems beyond Azure AD integration, and group policy management (GPO) configurations. These may be considered for future initiatives based on the outcomes and maturity of this deployment.
 
-•	Privilege Escalation and Role Changes: Monitor changes to privileged groups or roles, such as additions to Domain Admins or Enterprise Admins, to prevent unauthorized access. 
+The project will be delivered in iterative phases using Agile methodology, ensuring stakeholder feedback and incremental deployment of high-impact IAM capabilities, while minimizing disruption to business operations.
 
-•	User Account Management: Detect the creation, deletion, or modification of user accounts, especially those involving administrative privileges or sensitive roles. 
+In-Scope:
 
-•	Group Policy Changes: Audit modifications to Group Policy Objects (GPOs), which can have a significant impact on network security and operations. Source: Microsoft Active Directory Security
+•	Review and analysis of existing AD user and group configurations.
 
+•	Implementation of scripts/tools for automated account management.
 
+•	Standardization and enforcement of RBAC.
 
-Tools for Auditing Active Directory
+•	Deployment of auditing and alert mechanisms for AD changes.
 
-Microsoft's Native Tools:
+•	Integration with Security Information and Event Management (SIEM) tools for real-time monitoring.
 
-•	Event Viewer: Provides logs for security, system, and application events.
+•	User training and documentation for the IAM framework.
 
-•	Advanced Audit Policy: Allows fine-grained auditing of AD activities.
+Out-of-Scope:
 
+•	Group Policy Object (GPO) configuration.
 
+•	Integration with third-party IAM platforms.
 
-Third-Party Solutions
-
-•	Netwrix Auditor: Comprehensive auditing, reporting, and compliance tool for AD.
-
-•	Lepide Auditor: Focused on monitoring, alerting, and auditing of AD changes.
-
-•	Splunk: Provides real-time analysis of AD logs with anomaly detection capabilities. - Integrates AD logs into a centralized SIEM for advanced analytics. Real-time log correlation and threat detection. 
-Customizable dashboards and reports. 
-
-By systematically auditing and monitoring Active Directory, organizations can enhance their security posture, ensure compliance, and reduce the risk of unauthorized access or breaches.
-
-## 2.0	Scope
-The project aims to design and implement a robust audit-driven Identity and Access Management framework using Active Directory (AD) to enhance security, ensure regulatory compliance, and prevent unauthorized access through effective auditing, role management, and monitoring, and improve accountability within the organization’s IT environment.
+•	Identity federation or single sign-on (SSO) implementation.
 
 
-3.0	Project Objectives
+## 3.0	Project Objectives
 
-The goal of this project is to implement a robust audit-driven IAM framework, focusing on the following objectives:
+he primary objective of this project is to design, develop, and implement a robust, automated, and audit-driven Identity and Access Management (IAM) framework within SidodatTech’s Active Directory (AD) environment, in alignment with industry standards such as ISO/IEC 27001, NIST SP 800-53, and CIS Controls. The initiative seeks to establish a governance model that ensures access to enterprise systems is provisioned, modified, and de-provisioned based on verified roles and responsibilities, while maintaining a comprehensive audit trail to meet regulatory, legal, and operational requirements.
 
-1.	Install and configure Windows 10 Workstation, Ubuntu server for Splunk, Windows server 2022 for Active Directory Server, and Kali Linux.
+The primary objectives of this project are:
 
-2.	To establish robust, audit-focused Identity and Access Management (IAM) policies within Active Directory to effectively govern privileges, access permissions, user accounts, service accounts, and group memberships, ensuring security and compliance alignment.
+•	To automate user lifecycle management in Active Directory, including provisioning, modification, and de-provisioning.
 
-3.	Automate User Account Lifecycle Management of user account creation, modification, and deactivation process to effectively reduce the risks from orphaned or inactive accounts and stale permissions.
+•	To establish and enforce standardized RBAC policies across departments.
 
-4.	Deploy real-time monitoring and anomaly detection mechanisms to identify unauthorized access, privilege escalations, or group policy modifications promptly, ensuring swift threat mitigation.
+•	To identify and remediate orphaned and inactive accounts.
 
-5.	Enforce role-based access control (RBAC) to ensure users only have access to resources necessary for their roles to minimize excessive permissions and enhance organizational security posture.
+•	To implement audit logging mechanisms for privileged account activities and group changes.
 
-6.	Implement detailed logging and audit trail capabilities across all Active Directory activities to align with regulatory compliance frameworks while enhancing transparency and accountability.
+•	To ensure ongoing compliance with relevant regulations such as ISO 27001, SOX, and NIST.
+
+•	To enhance visibility into access rights and activities for continuous monitoring and reporting.
+
+The objective is also to provide a scalable foundation for future identity federation, single sign-on (SSO), and cloud-based IAM integrations by following an extensible, modular design. Ultimately, the project will ensure that SidodatTech’s access control processes are not only secure and compliant but also agile, efficient, and aligned with the organization’s long-term digital transformation and cybersecurity strategy.
 
 
-## 3.0  Technologies and Tools:
+## 4.0  Technologies and Tools:
 •	A computer system with 16GB RAM
 
 •	A virtual machine preferably Oracle Virtual Box
@@ -127,6 +138,47 @@ The goal of this project is to implement a robust audit-driven IAM framework, fo
 •	Splunk Universal Forwarder
 
 •	PowerShell scripts
+
+
+## 5.0	Project Methodology: Agile-Based Implementation of an Audit-Driven IAM Framework
+
+The implementation of "Automating an Audit-Driven Identity and Access Management Framework in Active Directory" follows a robust, industry-grade Agile methodology designed to accommodate complexity, regulatory sensitivity, and cross-functional collaboration. Given the dynamic nature of identity governance and the criticality of real-time compliance enforcement, the Agile Scrum framework is selected to promote adaptability, iterative delivery, stakeholder alignment, and continuous risk management.
+
+5.1	Agile Justification
+
+Unlike traditional Waterfall approaches, Agile allows security, compliance, and IT teams to incrementally assess, develop, and deploy IAM components while constantly integrating stakeholder feedback. The iterative nature of Scrum enables early detection of misalignments, better handling of regulatory changes, and rapid response to identity-related risks across the enterprise.
+The project will follow the Agile methodology, ensuring flexibility, iterative delivery, and active stakeholder engagement. 
+
+The key characteristics of the Agile model applied in this project include:
+
+•	Sprints: Each phase will be divided into 2-week sprints, focusing on specific IAM components such as auditing, RBAC, automation, and de-provisioning.
+
+•	Scrum Meetings: Daily stand-ups and weekly reviews will ensure transparent communication and rapid issue resolution.
+
+•	Backlog Management: Requirements will be managed in a dynamic product backlog, prioritized by risk, compliance urgency, and technical feasibility.
+
+•	Incremental Delivery: Each sprint will result in a functional increment that is tested and documented, enabling progressive enhancement of the IAM framework.
+
+5.2 Project Timeline – IAM Automation with Agile Delivery
+
+5.3	Stakeholder Analysis
+
+
+5.4	Key meetings with the sprint phase
+
+
+
+5.5 Project Team Structure
+The success of this IAM automation project depends on a cross-functional team with clearly defined roles, responsibilities, and collaboration channels. The team structure below ensures technical depth, compliance oversight, business alignment, and agile delivery throughout the project lifecycle.
+
+| Role	| Team Member / Department	| Key Responsibilities | Expertise Area |
+|-------|--------------|------|-----|
+| Project Sponsor | Chief Information Officer (CIO) | Approves funding and resources; champions project at the executive level; resolves strategic roadblocks. | Executive Leadership, IT Governance |
+| Project Manager (Scrum Master)   |  IT Program Delivery Lead |  Manages Agile sprints, team coordination, progress tracking, stakeholder reporting, and risk mitigation. | Project Management, Agile, SDLC  |
+|    |    |   |   |
+|    |    |   |    |
+|    |    |    |   |
+
 
 
 ## 4.0 Methodology:

@@ -161,7 +161,38 @@ The key characteristics of the Agile model applied in this project include:
 
 5.2 Project Timeline – IAM Automation with Agile Delivery
 
+
+
+
 5.3	Stakeholder Analysis
+
+| Stakeholder | Role/Title | Interest in Project | Influence Level| Engagement Strategy |
+|----|----|----|----|----|
+
+| Chief Information Security Officer (CISO) | Executive Sponsor | Ensure IAM aligns with regulatory, risk, and security requirements. | High | Regular briefings, executive dashboards, risk updates. |
+
+| IT Security Manager | Project Champion / Functional Owner | Accountable for enforcing security controls and IAM governance. | High | Actively involved in requirements gathering, sprint reviews, and risk assessment. |
+
+| IAM Administrator | Technical Lead / SME | Responsible for implementing AD changes, scripting automation, and role assignments. | Medium | Involve in technical design, UAT, and deployment phases. |
+
+| Infrastructure Team | AD / Network Admins | Manage the AD servers and related systems impacted by the changes.| Medium | Consulted on implementation, automation, and rollback procedures. |
+
+| Compliance and Risk Team | Internal Auditors / Governance Specialists | Ensure framework meets regulatory and audit requirements. | High | Frequent check-ins, audit log validation, compliance testing. |
+
+| Human Resources (HR) | Identity Source System Owner | Provides joiner/mover/leaver data to trigger account provisioning workflows. | Medium | Collaborate during requirements gathering and data integration stages. |
+
+| IT Service Desk |Frontline IAM Support | First-level support for access requests and issues. | Low | Training and knowledge transfer on new workflows. |
+
+| Application Owners | Business System Custodians | Approve access requests and validate access based on roles. | Medium | Engage for RBAC definition and testing scenarios. |
+
+| Legal and Regulatory Affairs | Risk Governance Compliance | Ensure privacy and data access compliance. | Medium | Provide legal input for audit and access governance policies. | 
+
+| Project Manager (Agile Scrum Master) | Project Coordination | Coordinates Agile activities, backlog grooming, sprint planning, and reporting. | High | Full-time project engagement, stakeholder updates, and delivery tracking. |
+
+| End Users | Employees / Contractors | Subject to new access control policies and provisioning workflows. | Low | Awareness training, user acceptance testing, and feedback loop. |
+
+| External Auditors / Regulators | Compliance Oversight | Review access governance and AD controls in post-implementation audits. | High | Provide evidence, documentation, and compliance mapping. |
+
 
 
 5.4	Key meetings with the sprint phase

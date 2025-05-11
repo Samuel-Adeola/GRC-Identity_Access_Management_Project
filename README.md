@@ -169,6 +169,7 @@ The key characteristics of the Agile model applied in this project include:
 
 
 5.5 Project Team Structure
+
 The success of this IAM automation project depends on a cross-functional team with clearly defined roles, responsibilities, and collaboration channels. The team structure below ensures technical depth, compliance oversight, business alignment, and agile delivery throughout the project lifecycle.
 
 | Role	| Team Member / Department	| Key Responsibilities | Expertise Area |
@@ -181,113 +182,12 @@ The success of this IAM automation project depends on a cross-functional team wi
 
 
 
-## 4.0 Methodology:
-Phase 1 – Planning:
-
-This phase focuses on preparing for the project's implementation by addressing resource allocation, communication, stakeholder engagement, and timeline considerations. The activities include:
-
-•	Identify and procure necessary hardware and software (e.g., systems with 8GB RAM, Oracle VirtualBox, Windows Server, Ubuntu Server, and Splunk).
-
-•	Assess and select free or cost-effective editions of required tools, ensuring their compatibility and security.
-
-•	Define communication channels and medium for the project 
-
-•	Schedule stakeholder meetings for each phase of the project that align with project goals.
-
-•	Document project disclaimers, legal considerations, tools, technologies, resources, designs, processes, changes, and expected outcomes.
-
-•	Draft a comprehensive project timeline.
-
-Expected output: A detailed project plan, including schedules, resources, and tools inventory.
-
-
-
-Phase 2 – Project Design:
-
-This phase involves designing the technical and logical architecture required to achieve the project's objectives. The project is divided into three main sub-stages:
-
-1.	Installation and Configuration of Machines: Install and configure Windows 10 Workstation, Ubuntu Server for Splunk, and Windows Server 2022 for AD within Oracle VirtualBox.
-
-2.	Active Directory Configuration: Set up Active Directory, including domain controllers and group policy objects (GPOs), and define initial role-based access control (RBAC) policies and audit parameters.
-
-3.	SIEM Integration and Monitoring Setup: Configure Splunk and Splunk Universal Forwarder to collect and aggregate logs from Active Directory and deploy Sysmon-Sysinternal for advanced event monitoring.
-
-Expected output: A fully designed framework, including system architecture and configurations.
-
-
-
-Phase 3 – Implementation:
-
-This phase involves putting the designs into action to create the audit-driven IAM framework. Major activities at the implementation stage are:
-
-•	Deploy and validate the configuration of all machines and software.
-
-•	Implement automated workflows for user account lifecycle management (e.g., account creation, modification, and deactivation).
-
-•	Enable real-time monitoring and alerting for unauthorized access and privilege escalation using Splunk and Sysmon.
-
-•	Enforce RBAC and ensure users only have access relevant to their roles.
-
-•	Implement audit trails for all AD activities, ensuring logs are comprehensive and tamper-proof.
-
-•	Create User Accounts and Service Accounts  in their respective Organisational Units.
-
-•	Create separate administrative groups with restricted permissions and establish a monitoring system for privileged accounts.
-
-•	Review and revise Active Directory settings to enforce strong password policies, account lockouts, and a classification system based on the principle of least privilege.
-
-•	Conduct a business function review to create specific roles, ensuring users only have access to the resources necessary for their job functions.
-
-•	Configure ACLs in AD to ensure appropriate permissions are applied to different user groups based on their roles.
-
-•	Develop a PowerShell script to identify orphaned accounts by comparing Active Directory data with HR records. The script will automatically disable or remove these accounts.
-
-•	Implement regular checks for inactive or unnecessary accounts.
-
-•	Configure Active Directory to log changes to user accounts, security groups, and group memberships. All administrative activities will be tracked and logged for accountability.
-
-•	Use tools like Splunk or Microsoft Advanced Threat Analytics (ATA) to collect and analyze logs for unusual or suspicious activities.
-
-•	Set up automated alerts for suspicious changes, such as unauthorized group memberships or changes in user permissions.
-
-Expected output: A fully functional IAM framework in the Active Directory environment.
 
 
 
 
-Phase 4 – Evaluation:
-This phase focuses on testing the framework to ensure it meets security, compliance, and operational requirements. The following activities will be performed: 
-
-•	Simulate unauthorized access attempts to test anomaly detection capabilities.
-
-•	Perform access reviews to validate RBAC policies.
-
-•	Generate compliance reports to ensure alignment with standards like SOX and ISO 27001.
-
-•	Gather stakeholder feedback on framework usability and performance.
-
-Expected output: Evaluation report highlighting findings, adjustments, and framework effectiveness.
-
-
-
-Phase 5 – Documentation and Handover:
-
-This phase ensures that stakeholders have the necessary resources to manage and maintain the framework. The final stage of the project will involve: 
-
-•	Develop detailed user manuals, including processes for monitoring, auditing, and RBAC management.
-
-•	Provide training to IT teams and administrators on framework operation.
-
-•	Document lessons learned, project challenges, and future recommendations.
-
-•	Officially hand over the system to the organization's IT team.
-
-Expected output: Comprehensive documentation, trained personnel, and a fully operational IAM system in AD.
-
-
-
-## 5.0 Result
-5.1	Installation and configuration of machines
+## 6.0 Result
+6.1	Installation and configuration of machines
 A total of four machines will be installed and configured on an Oracle Virtual Box. These machines are:
 
 1.	Windows 10 Pro as WorkStationMachine
@@ -301,34 +201,34 @@ A total of four machines will be installed and configured on an Oracle Virtual B
 
 
 
-5.1.1	Windows 10 Pro Installation for WorkStation Machine
+6.1.1	Windows 10 Pro Installation for WorkStation Machine
 
 •	Download Windows ISO image file from https://www.microsoft.com/en-ca/software-download/windows10
 
 
 ![ADx Windows10Fig1](https://github.com/user-attachments/assets/984b9ce6-5c3e-4f32-8a9f-444557de955a)
 
-Figure 5.1.1a:
+Figure 6.1.1a:
 
 
 ![ADx Windows10Fig2](https://github.com/user-attachments/assets/bdec870d-c537-408c-8b68-7fb9cb0506ac)
-Figure 5.1.1b:
+Figure 6.1.1b:
 
 
 
 ![ADx Windows10Fig3](https://github.com/user-attachments/assets/7c12ebaf-a233-428a-96c6-bfd6d3557103)
-Figure 5.1.1c:
+Figure 6.1.1c:
 
 
 
  ![ADx Windows10Fig6](https://github.com/user-attachments/assets/231b5665-674a-492c-af32-884148dbdb39)
 
-Figure 5.1.1d:
+Figure 6.1.1d:
 
 
 ![ADx Windows10Fig6](https://github.com/user-attachments/assets/40a9e117-de9b-4b45-9c43-b77a1111b4aa)
 
-Figure 5.1.1e: Windows 10 media creation tool 
+Figure 6.1.1e: Windows 10 media creation tool 
 
 
 
@@ -338,90 +238,90 @@ Figure 5.1.1e: Windows 10 media creation tool
 
 ![ADx Windows10Fig10](https://github.com/user-attachments/assets/7478cc9c-496f-4931-b62b-1c927d79f507)
 
-Figure 5.1.1f:
+Figure 6.1.1f:
 
 
 ![ADx Windows10Fig7](https://github.com/user-attachments/assets/00baf969-8f1a-4f8d-8567-cb1365d68fd5)
 
-Figure 5.1.1g:
+Figure 6.1.1g:
 
 
 ![ADx Windows10Fig9](https://github.com/user-attachments/assets/dbd43619-d0bf-46cb-a8a0-6d459082051a)
 
-Figure 5.1.1h:
+Figure 6.1.1h:
 
 Creating Windows 10 Pro Virtual Machine on VirtualBox
 
 
 ![ADx Windows10Fig11](https://github.com/user-attachments/assets/e759e6ab-e128-42b8-bc93-1c7a61b1f6c5)
 
-Figure 5.1.1i: Windows 10 Pro WorkStation Machine
+Figure 6.1.1i: Windows 10 Pro WorkStation Machine
 
 ![ADx Windows10Fig12](https://github.com/user-attachments/assets/bccd1797-cf02-4472-8b79-f022010c2e8d)
 
-Figure 5.1.1j:
+Figure 6.1.1j:
 Accept the Licence Agreement
 
 
 ![ADx Windows10Fig16](https://github.com/user-attachments/assets/4d76e21f-8b7f-40a5-95d5-3dbb30c417ed)
 
-Figure 5.1.1k:
+Figure 6.1.1k:
 
 
 ![ADx Windows10Fig18](https://github.com/user-attachments/assets/ccd6796c-fa46-4173-b804-e7818c738a0c)
 
-Figure 5.1.1l: Windows 10 Pro Setup
+Figure 6.1.1l: Windows 10 Pro Setup
 
 
 
-5.1.2	Windows Server 2022 Installation for Active Directory
+6.1.2	Windows Server 2022 Installation for Active Directory
 
 •	Downloading the ISO file from https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022 
 
 ![AD WindowsServerFig1](https://github.com/user-attachments/assets/e96387db-7b8d-4318-9547-30b4f6e081de)
 
-Figure 5.1.2a: Windows Server 2022
+Figure 6.1.2a: Windows Server 2022
 
 
 ![AD WindowsServerFig2](https://github.com/user-attachments/assets/2a02c4cf-d8d6-426c-aef7-427d8d2a55aa)
 
-Figure 5.1.2b: Windows Server 2022 iso
+Figure 6.1.2b: Windows Server 2022 iso
 
 
  ![AD WindowsServerFig5](https://github.com/user-attachments/assets/3e0daf08-2a08-4fa1-825d-7f4b2474e916)
 
-Figure 5.1.2c: Windows Server 2022 in the Downloads
+Figure 6.1.2c: Windows Server 2022 in the Downloads
 
 
 •	Add the Windows Server 2022 ISO file to the VirtualBox
 
 ![AD WindowsServerFig11](https://github.com/user-attachments/assets/90085aa2-cc47-44b3-9f57-ce4232f76d86)
 
-Figure 5.1.2d:
+Figure 6.1.2d:
 
 ![AD WindowsServerFig12](https://github.com/user-attachments/assets/257b23db-4ed4-46ae-a997-99f872d1edb4)
 
-Figure 5.1.2e:
+Figure 6.1.2e:
 
 
 ![AD WindowsServerFig13](https://github.com/user-attachments/assets/92b383c1-9bdf-4756-b0d4-6df9e4cca491)
 
-Figure 5.1.2f:
+Figure 6.1.2f:
 
 ![AD WindowsServerFig14](https://github.com/user-attachments/assets/90433b9e-30c8-4d78-897a-9d41e6a75a2e)
-Figure 5.1.2g:
+Figure 6.1.2g:
 
 ![AD WindowsServerFig15](https://github.com/user-attachments/assets/08c70839-aa3b-4dd5-8b11-c7ad3496f9ad)
 
-Figure 5.1.2h: 
+Figure 6.1.2h: 
 
 ![AD WindowsServerFig16](https://github.com/user-attachments/assets/eb110b96-6a24-42f1-8c6f-ee0d7ce79a17)
 
-Figure 5.1.2i:
+Figure 6.1.2i:
 
 
 ![AD WindowsServerFig17](https://github.com/user-attachments/assets/de612023-95b0-4ae1-b744-91423a1b5af1)
-Figure 5.1.2j:
+Figure 6.1.2j:
 
 
 •	Setting up the Windows Server 2022
@@ -429,53 +329,53 @@ Create Login Credentials
 
 ![AD WindowsServerFig18](https://github.com/user-attachments/assets/8b845654-a1c3-44f5-aceb-63bf76c5ee32)
 
-Figure 5.1.2k: Create login details
+Figure 6.1.2k: Create login details
 
 •	Select Devices >> Keyboard >> Insert Ctrl-ALT-Del
 
 
 ![AD WindowsServerFig19](https://github.com/user-attachments/assets/9ef2ffd4-8ac3-4487-854f-f6c97c2e9f24)
 
-Figure 5.1.2l:
+Figure 6.1.2l:
 
 Logon to the Active Directory Server
  
-Figure 5.1.2m:
+Figure 6.1.2m:
 
 XXXXX
-Figure 5.1.2n: Server Manager created.
+Figure 6.1.2n: Server Manager created.
 
 
 
-5.1.3	Ubuntu Server (Linux version 24.02 LTS) for Splunk Server
+6.1.3	Ubuntu Server (Linux version 24.02 LTS) for Splunk Server
 
 •	Download Ubuntu Server from https://ubuntu.com/download/server#products
 
 ![Ubuntu-SplunkServerFig2](https://github.com/user-attachments/assets/36a1c6a1-bf28-4305-b878-d8a06e358409)
-Figure 5.1.3a: Ubuntu server download
+Figure 6.1.3a: Ubuntu server download
 
 
 ![Ubuntu-SplunkServerFig4](https://github.com/user-attachments/assets/9affe84f-63a9-4f18-8997-eadfd681c42d)
-Figure 5.1.3b: Downloading Ubuntu server 
+Figure 6.1.3b: Downloading Ubuntu server 
 
 
 ![Ubuntu-SplunkServerFig9](https://github.com/user-attachments/assets/5ab11641-c506-4b37-b841-7274be1ecc76)
-Figure 5.1.3c: Ubuntu server iso in the Downloads
+Figure 6.1.3c: Ubuntu server iso in the Downloads
 
 •	Ubuntu server installation on VirtualBox
 
 ![Ubuntu-SplunkServerFig10a](https://github.com/user-attachments/assets/569a8332-3ed8-4a6d-840b-6e6b1724f7e4)
-Figure 5.1.3d: Splunk Server installation in VirtualBox
+Figure 6.1.3d: Splunk Server installation in VirtualBox
 
 
 ![Ubuntu-SplunkServerFig10](https://github.com/user-attachments/assets/0dcb285a-8014-48e5-ba5a-62ed6418aa95)
-Figure 5.1.3e: Creating name and iso file uploading
+Figure 6.1.3e: Creating name and iso file uploading
 
 •	Set the Base memory to 8GB and CPU to 2
 
 
 ![Ubuntu-SplunkServerFig11](https://github.com/user-attachments/assets/bf08f33f-4c28-4128-96ff-299ede9615d1)
-Figure 5.1.3f: Hardware set-up
+Figure 6.1.3f: Hardware set-up
 
 
 
@@ -483,11 +383,11 @@ Figure 5.1.3f: Hardware set-up
 
 
 ![Ubuntu-SplunkServerFig12 jpg](https://github.com/user-attachments/assets/31eb9509-3964-42f0-9b02-abdcc66e90bf)
-Figure 5.1.3g: Hard disk size configuration
+Figure 6.1.3g: Hard disk size configuration
 
 
 ![Ubuntu-SplunkServerFig13](https://github.com/user-attachments/assets/0001a962-8265-48a2-8ab6-635353c434f1)
-Figure 5.1.3h: Spunk installation 
+Figure 6.1.3h: Spunk installation 
 
 
 Splunk Configuration
@@ -495,28 +395,28 @@ Splunk Configuration
 •	Select English and press Enter. Continue to select Done
 
 ![Ubuntu-SplunkServerFig14](https://github.com/user-attachments/assets/74364fcf-2998-43c1-949b-ba672a2749d4)
-Figure 5.1.3i: Splunk profile set-up
+Figure 6.1.3i: Splunk profile set-up
 
 
 Login credential set-up
 
 ![Ubuntu-SplunkServerFig18](https://github.com/user-attachments/assets/f9a64d5b-3355-456a-ac7c-abd823e1e421)
-Figure 5.1.3j: Splunk server installation login set-up
+Figure 6.1.3j: Splunk server installation login set-up
 
 
 ![Ubuntu-SplunkServerFig22](https://github.com/user-attachments/assets/d24d91bf-af60-4612-b3d3-413882e4fbee)
-Figure 5.1.3k:
+Figure 6.1.3k:
 
 
 ![Ubuntu-SplunkServerFig26](https://github.com/user-attachments/assets/f22b404c-5e13-4f81-8794-e0785b9be919)
-Figure 5.1.3l: Spunk sign-in page
+Figure 6.1.3l: Spunk sign-in page
 
 
 •	Splunk upgrade and update the server
 
 
 ![Ubuntu-SplunkServerFig26](https://github.com/user-attachments/assets/877aedf5-72c4-420a-9e8e-d14d61876045)
-Figure 5.1.3m: Splunk upgrade
+Figure 6.1.3m: Splunk upgrade
 
 
 
@@ -527,43 +427,43 @@ Figure 5.1.3m: Splunk upgrade
 
 ![SysmonFig3](https://github.com/user-attachments/assets/835648a3-07d8-4a22-a286-b40e017a8d85)
 
-Figure 5.1.4a: Virtual Box NAT Network set-up
+Figure 6.1.4a: Virtual Box NAT Network set-up
 
 •	Configuring the NAT Network of the Splunk Server 
 
 ![SysmonFig4](https://github.com/user-attachments/assets/bfa4f66a-9079-43e8-9775-50e2ab467d0d)
-Figure 5.1.4b: Splunk NAT Network set-up
+Figure 6.1.4b: Splunk NAT Network set-up
 
 XXXXXX
-Figure 5.1.4c: Splunk NAT Network configuration
+Figure 6.1.4c: Splunk NAT Network configuration
 
 
 ![SysmonFig20](https://github.com/user-attachments/assets/8a9b7e00-6129-4b7a-86fa-62496dd7df1f)
-Figure 5.1.4d:
+Figure 6.1.4d:
 
 
 ![SysmonFig22a](https://github.com/user-attachments/assets/6efc4831-1982-4796-8255-1773f1873385)
-Figure 5.1.4e:
+Figure 6.1.4e:
 
 
 ![SysmonFig24](https://github.com/user-attachments/assets/0c204216-53ed-4bb0-a523-d0a34fdfe943)
-Figure 5.1.4f:
+Figure 6.1.4f:
 
 
 ![SysmonFig25](https://github.com/user-attachments/assets/b7d0aca2-083b-4fde-91e7-23a096027534)
-Figure 5.1.4g:
+Figure 6.1.4g:
 
 
 ![SysmonFig26](https://github.com/user-attachments/assets/51b8adf5-4c5b-4f7d-8e03-d8a319bc28ee)
-Figure 5.1.4h:
+Figure 6.1.4h:
 
 xxxxxx 
-Figure 5.1.4i:
+Figure 6.1.4i:
 
 
 ![SysmonFig30a](https://github.com/user-attachments/assets/32ccd3f7-2381-4146-b8e5-4ab687bea21f)
 
-Figure 5.1.4j:
+Figure 6.1.4j:
 
 
 Click on Add
@@ -571,50 +471,50 @@ Click on Add
  
 ![SysmonFig31a](https://github.com/user-attachments/assets/feb1b88c-7bde-4207-a106-37fb2eb072ed)
 
-Figure 5.1.4k:
+Figure 6.1.4k:
 
 
 ![SysmonFig31](https://github.com/user-attachments/assets/38d5a430-a257-4b81-a1ac-600e9053a632)
-Figure 5.1.4l:
+Figure 6.1.4l:
 
 
 ![SysmonFig32](https://github.com/user-attachments/assets/a0cce85e-0178-44bc-9563-2064beea1fbb)
  
-Figure 5.1.4m:
+Figure 6.1.4m:
 
 
 ![SysmonFig33](https://github.com/user-attachments/assets/13bdd0c4-7178-431f-9a63-7136d8f21540)
 
-Figure 5.1.4n:
+Figure 6.1.4n:
 
 
 ![SysmonFig34](https://github.com/user-attachments/assets/fa5f2b21-27f8-490c-9f67-822f1785d1cd)
 
-Figure 5.1.4o:
+Figure 6.1.4o:
 
 
 ![SysmonFig35](https://github.com/user-attachments/assets/91fdaadb-6a08-4766-950d-8b6f8bf95aa8)
 
-Figure 5.1.4p:
+Figure 6.1.4p:
 
 
 ![SysmonFig36](https://github.com/user-attachments/assets/656937df-da4f-4e84-81e0-6052de7c5488)
-Figure 5.1.4q:
+Figure 6.1.4q:
 
 
 ![SysmonFig38](https://github.com/user-attachments/assets/ceb81509-c4b8-4f74-b2c8-ade287b38300)
-Figure 5.1.4r:
+Figure 6.1.4r:
 
 
 ![SysmonFig40a](https://github.com/user-attachments/assets/48bbf943-1bfa-4339-87e2-f71e85e02d6c)
 
-Figure 5.1.4s:
+Figure 6.1.4s:
 
 
 5.1.5	Installation and Configuration of Sysmon and Splunk Universal Forwarder on WorkStationMachine and Splunk Server
 Rename the target machine to WorkStationMachine:
  
-Figure 5.1.4s:
+Figure 6.1.4s:
 
 Change the IP address 192.168.10.7 on the network adapter to 192.168.10.100 
 xxxxxxx

@@ -187,6 +187,8 @@ The key characteristics of the Agile model applied in this project include:
 
 
 
+
+
 5.5 Project Team Structure
 
 The success of this IAM automation project depends on a cross-functional team with clearly defined roles, responsibilities, and collaboration channels. The team structure below ensures technical depth, compliance oversight, business alignment, and agile delivery throughout the project lifecycle.
@@ -194,10 +196,16 @@ The success of this IAM automation project depends on a cross-functional team wi
 | Role	| Team Member / Department	| Key Responsibilities | Expertise Area |
 |-------|--------------|------|-----|
 | Project Sponsor | Chief Information Officer (CIO) | Approves funding and resources; champions project at the executive level; resolves strategic roadblocks. | Executive Leadership, IT Governance |
-| Project Manager (Scrum Master)   |  IT Program Delivery Lead |  Manages Agile sprints, team coordination, progress tracking, stakeholder reporting, and risk mitigation. | Project Management, Agile, SDLC  |
-|    |    |   |   |
-|    |    |   |    |
-|    |    |    |   |
+| Project Manager (Scrum Master) |  IT Program Delivery Lead |  Manages Agile sprints, team coordination, progress tracking, stakeholder reporting, and risk mitigation. | Project Management, Agile, SDLC |
+| IAM Lead Architect |  Senior Security Architect  |  Designs IAM strategy, defines RBAC, reviews architecture, ensures compliance alignment. | Identity & Access Management, Security Design |
+| Active Directory Engineer | AD Domain Administrator | Executes AD cleanup, manages OUs, roles, permissions, and automates provisioning tasks. | Active Directory, Scripting, Windows Server |
+| DevOps Automation Engineer | Infrastructure Automation Specialist | Develops provisioning/de-provisioning scripts using PowerShell/Ansible; integrates with CI/CD pipelines. | Automation, Infrastructure as Code (IaC) |
+| Security & Compliance Analyst |  | Leads compliance analysis, performs internal audits, aligns implementation with ISO 27001, NIST, etc. | Compliance, Audit, Risk Management |
+| Business Analyst (BA) | Business Process Consultant | Gathers IAM and access requirements, maps business roles to technical permissions, supports documentation. | Business Analysis, RBAC Mapping | 
+| HR Systems Analyst | HRIS Specialist | Supplies employee data, defines joiner/mover/leaver process integration with AD. | HR Systems, Data Integration |
+| SIEM Integration Specialist | Security Monitoring Engineer | Integrates AD logs with SIEM tools (e.g., Splunk), configures alerts and reporting. | Security Monitoring, SIEM |
+| Quality Assurance (QA) Tester | IT Security Tester | Tests IAM features, validates RBAC logic, access controls, and audit functionality. | QA Testing, Security Validation |
+| Change Advisory Board (CAB) Liaison | Change Manager | Coordinates deployment approvals, manages change impact assessments, and logs change requests. | ITIL, Change Management |
 
 
 

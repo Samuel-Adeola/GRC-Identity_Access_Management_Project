@@ -122,10 +122,9 @@ The objective is also to provide a scalable foundation for future identity feder
 ## 4.0  Technologies and Tools:
 •	A computer system with 16GB RAM
 
-•	A virtual machine preferably Oracle Virtual Box
+•	A virtual machine, preferably Oracle VirtualBox
 
-•	Windows Server 2010 pro (WorkstationMachine)
-
+•	Windows Server 2010 Pro (WorkstationMachine)
 
 •	Windows 2022 Server for Active Directory (AD-DC)
 
@@ -207,7 +206,37 @@ The success of this IAM automation project depends on a cross-functional team wi
 | Quality Assurance (QA) Tester | IT Security Tester | Tests IAM features, validates RBAC logic, access controls, and audit functionality. | QA Testing, Security Validation |
 | Change Advisory Board (CAB) Liaison | Change Manager | Coordinates deployment approvals, manages change impact assessments, and logs change requests. | ITIL, Change Management |
 
+5.6		Communication Plan
 
+A well-structured communication plan ensures transparency, fosters collaboration, and aligns stakeholder expectations throughout the project lifecycle. This plan is tailored for an Agile delivery model, incorporating both structured and adaptive communication elements.
+
+5.6.1. Communication Objectives
+
+•	Ensure timely dissemination of relevant information to all stakeholders.
+
+•	Support Agile collaboration through continuous feedback and sprint-based updates.
+
+•	Align technical, business, and compliance teams on deliverables and expectations.
+
+•	Facilitate risk mitigation, issue resolution, and informed decision-making.
+
+•	Promote user adoption and readiness through awareness and training.
+
+
+5.6.2. Communication Matrix
+
+| Communication Type | Audience | Purpose | Frequency |  | Owner |
+|----|----|----|----|---|---|
+| Project Kickoff Meeting | All Stakeholders | Introduce project, goals, roles, timelines | Once (Project Start) | MS Teams / Zoom | Project Manager |
+| Daily Scrum Stand-up | Project Team (Technical & Functional) | Track progress, blockers, and coordinate work | Daily (15 mins) | MS Teams / Agile Board / Jira | Scrum Master |
+| Sprint Planning Meeting | Project Team & Key Stakeholders | Define sprint goals, prioritize backlog | Biweekly | Jira / Confluence / MS Teams | Scrum Master / Product Owner |
+| Sprint Review & Demo | All Stakeholders | Showcase deliverables and collect feedback | End of each Sprint | Zoom / PowerPoint / Live Demo | Scrum Master / Dev Team Lead |
+| Compliance Sync Meetings | Risk, Audit, Security, Legal Teams | Align framework with regulatory expectations | Biweekly or Monthly | Zoom / Meeting Minutes | IT Security Manager |
+| Technical Design Sessions | Security, IAM, Infrastructure Teams | Discuss architecture, automation, and RBAC models | As Needed (Sprint 1-3) | Whiteboard / Teams / Diagrams.net | IAM Lead / Technical Architect |
+| Risk & Issue Reports | Project Sponsor, Compliance, PMO | Escalate risks/issues and propose mitigation plans | Weekly | Email / Risk Register Document | Project Manager |
+| User Awareness Workshops | End Users, HR, Service Desk | Educate on access policy changes and IAM workflows | Sprint 4 & 5 | Webinars / Internal LMS / Email | IT Security Trainer |
+| Project Status Reports | CISO, Executive Sponsors | High-level updates, progress, metrics | Biweekly | PowerPoint / Dashboard / Executive Summary | Project Manager |
+| Post-Implementation Review | All Stakeholders | Evaluate success metrics and gather lessons learned | Project Closeout | Presentation / Report / Meeting | Project Manager / CISO |
 
 
 

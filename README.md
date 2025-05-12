@@ -183,6 +183,17 @@ The key characteristics of the Agile model applied in this project include:
 
 
 5.4	Key meetings with the sprint phase
+5.4	Key meetings with the sprint phase
+
+| Sprint Phase | Suggested Timeline | Meeting Frequency | Participants | Key Meetings Conducted | Purpose | 
+|----|----|----|----|---|---|
+| Sprint 0: Initiation & Planning | Week 1 – Week 2 | One-time / Weekly | Project Sponsor, Project Manager, Scrum Master, Business Analyst, Security Lead | Project Kickoff Stakeholder Onboarding Agile Tooling Setup | Align on goals, roles, governance; define success criteria, onboard stakeholders, set Agile tool/workspace (e.g., Jira, Confluence) | 
+| Sprint 1: Requirements Gathering | Week 3 – Week 4 | Daily / Bi-weekly | Business Analyst, IAM Lead, Security Architect, Compliance Analyst, HRIS Analyst | Sprint Planning Requirements Workshops Daily Standups | Capture detailed IAM and compliance requirements; review audit gaps and access control needs; align stakeholder expectations | 
+| Sprint 2: Design & Architecture | Week 5 – Week 6 | Daily / Weekly | IAM Lead, AD Engineer, DevOps, Security Architect, CAB Representative | Architecture Review Sprint Planning CAB Pre-Approval | Finalize AD object design, RBAC policies, and audit logging; obtain CAB input on proposed changes; break epics into implementable stories | 
+| Sprint 3: Implementation & Integration | Week 7 – Week 8 | Daily / Bi-weekly | AD Engineer, DevOps, IAM Lead, QA Tester, Security Analyst | Daily Standups Integration Sync CAB Change Approval | Deploy automation scripts, connectors, and permission structures; test integrations with HRIS, SIEM; receive approval for deployment actions | 
+| Sprint 4: Testing & Validation | Week 9 – Week 10 | Daily / Weekly | QA Tester, IAM Lead, Business Analyst, Compliance Officer | Sprint Review QA & UAT Planning Compliance Sync | Conduct validation testing, RBAC audits, and UAT scenarios; document issues; align with auditors and business stakeholders |
+| Sprint 5: Deployment & Go-Live | Week 11 – Week 12 | Daily / Weekly | CAB, Security Lead, IAM Lead, PM, Service Desk Lead | Go-Live Readiness Review Final CAB Meeting Executive Review | Final checks before production deployment; ensure rollback plan, change approvals, business continuity plans, and stakeholder sign-off | 
+| Sprint 6: Optimization & Closure | Week 13 – Week 14 | Weekly | Entire Project Team, Executives, Stakeholders | Lessons Learned Workshop Process Optimization Review Final Demo | Conduct post-implementation analysis; define next-phase roadmap; present executive-level outcome metrics and finalize documentation | 
 
 
 
@@ -707,6 +718,19 @@ To enable Splunk server to receive data. Click Settings >> Forwarding and Receiv
 
 
 
+
+
+## References
+1.	Gartner. (2024). Market Guide for Identity Governance and Administration. Gartner Research.
+
+2.	IBM Security & Ponemon Institute. (2024). Cost of a Data Breach Report. https://www.ibm.com/reports/data-breach
+
+3.	Cybersecurity Ventures. (2023). Cybersecurity Market Report. https://cybersecurityventures.com/cybersecurity-market-report/
+
+4.	IBM. (2023). Cost of a Data Breach Report. Retrieved from: https://www.ibm.com/reports/data-breach 
+
+
+5.	Ponemon Institute & Saviynt. (2023). The State of Identity and Access Management Maturity Report. Retrieved from: https://saviynt.com/resources/state-of-iam-maturity-2023 
 
 
 

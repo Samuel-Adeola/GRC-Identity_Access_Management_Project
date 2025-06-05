@@ -25,6 +25,36 @@ These deficiencies significantly increased SidodatTech’s exposure to regulator
 
 This project will serve as a foundational step in aligning SidodatTech’s access control environment with industry best practices, enabling proactive monitoring, policy enforcement, and scalable integration with future IAM solutions, including identity federation and zero-trust architecture.
 
+##	Table of Contents
+
+Executive Summary
+
+Project Background
+
+1. Introduction
+
+2. Problem Statement
+
+3. Objectives
+
+4. Scope
+
+5. Technical Tools and Technologies
+
+6. Project Methodology - Agile Model: Justification, Project Team and Stakeholders, Roles and Responsibilities, Project Timeline, Stakeholders and Meetings, Roles and Responsibilities, Communication Plan
+
+7. Risk Management
+
+8. Implementation Stages
+
+9. Testing and Validation
+
+10. Expected Outcomes and Success Criteria
+
+11. Conclusion
+
+12. References
+
 ## Executive Summary 
 
 SidodatTech Enterprise Limited, a mid-sized financial services organization, has launched a strategic initiative to address the findings of a recent compliance audit that revealed severe deficiencies in its Active Directory (AD)-based Identity and Access Management (IAM) framework. These deficiencies included the presence of orphaned user accounts belonging to former employees, excessive and unregulated privileges due to inconsistent role-based access control (RBAC), a lack of audit trails for changes made to user and group accounts, and insufficient monitoring of privileged user activities. These gaps not only exposed the company to regulatory non-compliance but also increased the risk of data breaches, insider threats, and operational inefficiencies. In response, this project aims to design and implement an automated, audit-driven IAM framework that strengthens security, enhances compliance, and aligns user access with organizational policy through RBAC standardization and lifecycle management.
